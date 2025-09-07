@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(190, 154, 224);
+    margin: 0;
+    /* Melhor garantir que não tenha margem padrão */
+}
+
+table {
+    margin: 20px auto; /* Centraliza a tabela com um espaçamento vertical */
+    border-collapse: collapse;
+    width: 60%; /* Corrigido para porcentagem */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Pequena sombra para destaque */
+    border: 1px solid #ccc; /* Borda suave em volta da tabela */
+    background-color: rgb(103, 109, 201); /* Fundo branco para contraste */
+}
+
+.input-box {
+  background-color: #ffffff;       /* fundo branco */
+  padding: 20px;                /* espaçamento interno */
+  margin: 20px auto;            /* centraliza horizontal e espaça vertical */
+  width: 80%;                   /* largura consistente com a tabela */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+  border-radius: 10px;          /* cantos arredondados */
+  text-align: left;             /* para os inputs ficarem alinhados à esquerda */
+  font-size: 16px;
+  
+}
+
+.bot {
+  background-color: #f0ee90;    /* roxo vibrante */
+  color: rgb(15, 14, 2);                /* texto branco */
+  padding: 12px 25px;          /* espaçamento interno (vertical e horizontal) */
+  border: none;                /* remove borda padrão */
+  border-radius: 8px;          /* cantos arredondados */
+  font-size: 16px;             /* tamanho da fonte */
+  cursor: pointer;             /* cursor de mãozinha */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(122, 90, 248, 0.4); /* sombra suave */
+}
+
+th, td {
+    padding: 12px 15px; /* Espaçamento mais confortável */
+    text-align: center;
+    border: 1px solid #ddd; /* Borda leve nas células */
+    font-size: 16px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa; /* Cor levemente mais clara para linhas pares */
+}
+
+tr:hover {
+    background-color: #e0d4f7; /* Efeito hover para melhor usabilidade */
+    cursor: default;
+}
