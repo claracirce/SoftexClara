@@ -1,0 +1,80 @@
+body {
+background-color: rgb(188, 241, 248);
+text-align: center;
+background-image: url('https://png.pngtree.com/png-vector/20240104/ourmid/pngtree-isolated-sea-shells-kids-png-image_10897208.png');
+background-repeat: repeat; /* repete horizontal e vertical */
+background-position: top left; /* começa do canto superior esquerdo */
+background-size: auto; /* mantém o tamanho original da imagem */
+
+
+}
+.imagem {
+    width: 130px;
+    border-radius: 70px; /* arredonda a imagem */
+    align-items: center;
+}
+#eu {
+    color: black;
+    text-align: center;
+    font-size: small;
+}
+
+.hobbies {
+color: rgb(0, 0, 0);
+font-family: fantasy;
+font-size: small;
+
+}
+#sobre {
+    color: rgb(245, 175, 70);
+    background-color: rgb(188, 241, 248);
+    border-radius: 10px;
+    
+}
+
+#esses{
+    color: rgb(245, 175, 70);
+    background-color: rgb(188, 241, 248);
+    border-radius: 10px;
+}
+
+.titulo {
+    color: rgb(245, 175, 70);
+    background-color: rgb(188, 241, 248);
+    border-radius: 10px;
+}
+
+section {
+margin: 0;
+height: 40vh;
+box-sizing: border-box;
+background-color:  white;
+position: absolute;
+border-radius: 10px;
+
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 25%;        /* largura para ocupar boa parte da tela */
+max-width: 600px;  /* limitar a largura máxima */
+height: 50vh;
+
+margin: 0;
+align-items: center;
+
+}
+.ler{
+    background-color: rgb(188, 241, 248);
+    width: 80px;
+}
+.coz{
+    background-color: rgb(188, 241, 248);
+    width: 80px;
+}
+.mob {
+    background-color: rgb(188, 241, 248);
+    width: 80px;
+}
+button:hover{
+    color: rgb(245, 175, 70);
+}
