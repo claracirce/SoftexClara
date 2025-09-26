@@ -1,0 +1,18 @@
+body {
+    background-color: blueviolet;
+}
+button {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+
+section {
+    background: white;
+     text-align: center;
+    border-radius: 10px; /* deixa a borda arredondada.*/
+    padding: 20px; /* aumenta a grossura da borda */
+    width: 700px; /* muda a largura da borda */
+    margin: auto; /* coloca a borda no meio */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.384); /* coloca sombra na borda */
+}

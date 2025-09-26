@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: pink;
+}
+
+section {
+    background: white;
+     text-align: center;
+    border-radius: 10px; /* deixa a borda arredondada.*/
+    padding: 15px; /* aumenta a grossura da borda */
+    width: 600px; /* muda a largura da borda */
+    margin: auto; /* coloca a borda no meio */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.384); /* coloca sombra na borda */
+}
+p {
+    text-align: center;
+    padding: 8px;
+    font: normal 17px arial ;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+      background-color: rgb(111, 199, 108);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: padding;
+    margin-top: 20px;
+    
+
+}
+
+button:hover {
+    background-color: #e0b1c7;
+}
+
+#resultado p {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.verde {
+    color: green;
+}
+
+.vermelho {
+    color: red;
+}
+
+#estrelas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.estrela {
+    position: absolute;
+   color: yellow;
+   font-size: 30px; /* tamanho da estrela */
+   opacity: 0.8;
+   animation: cair linear infinite;
+   pointer-events: none;
+}
+
+@keyframes cair { /* animação */
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
