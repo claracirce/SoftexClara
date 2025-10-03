@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#inputTarefa:focus {
+    outline: none;
+    border-color: #5b9bd5;
+}
+
+#btnAdicionar {
+    width: 100%;
+    padding: 12px;
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnAdicionar:hover {
+    background-color: #4a8ac4;
+}
+
+#listaTarefas {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#listaTarefas li {
+    background-color: #f5f7fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+listatarefas li:hover {
+    background-color: #e8f0f7;
+}
+.btnConcluir {
+    background-color: #28a745;
+    color: white;
+    border: nome;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+.btnConcluir:hover {
+    background-color: #218838;
+}
+
+.concluida {
+    text-decoration: line-through;
+    color: #6c757d;
+}

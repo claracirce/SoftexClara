@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/app.js"></script>
+</head>
+<body>
+    <div class="calcular">
+    <h1>Calculadora básica</h1>
+    <input type="number" id="num1" placeholder="Digite o primeiro número"/>
+    <input type="number" id="num2" placeholder="Digite o segundo número"/>
+
+    <div class="buttons">
+        <button onclick="operar('somar')">Somar</button>
+        <button onclick="operar('subtrair')">Subtrair</button>
+        <button onclick="operar('multiplicar')">Multiplicar</button>
+        <button onclick="operar('dividir')">Dividir</button>
+    </div>
+    <div id="resultado"></div>
+    </div>
+</div>
+</body>
+</html>
