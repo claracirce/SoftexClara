@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+#resultado p {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.verde {
+    color: green;
+}
+
+.vermelho {
+    color: red;
+}
+
+.tremer { /* chama a classe tremer */
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+ .tremer:hover { /* treme ao encostar o mouse no botão */
+  animation: tremer 0.5s infinite;
+}
+
+@keyframes tremer { /* animação para tremer */
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  75%  { transform: translateX(-3px); }
+  100% { transform: translateX(0); }}
