@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(18, 180, 86);
+}
+
+section {
+     background: white;
+     text-align: center;
+    border-radius: 10px; /* deixa a borda arredondada.*/
+    padding: 15px; /* aumenta a grossura da borda */
+    width: 600px; /* muda a largura da borda */
+    margin: auto; /* coloca a borda no meio */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.384); /* coloca sombra na borda */
+}
+
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+#resultado p {
+    margin: 8px 0;
+}
+
+.tremer { /* chama a classe tremer */
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+ .tremer:hover { /* treme ao encostar o mouse no botão */
+  animation: tremer 0.5s infinite;
+}
+
+@keyframes tremer { /* animação para tremer */
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  75%  { transform: translateX(-3px); }
+  100% { transform: translateX(0); }}

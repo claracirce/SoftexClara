@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   max-width: 600px;
   margin: 40px auto;
@@ -51,4 +52,39 @@ lista li {
 .badge.menor {
   background-color: #f44336;
   color: white;
+=======
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e1e1;
+  
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #807f7f;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: rgb(136, 133, 133);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+>>>>>>> a6420aa5ffadddf1f5736cd1c488f79676f21445
 }

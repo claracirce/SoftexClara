@@ -1,0 +1,102 @@
+body {
+    background: rgb(90, 25, 49);
+    font: normal 15pt italic;
+    color: rgb(90, 25, 49);
+    
+}
+
+section {
+    background: white;
+     text-align: center;
+    border-radius: 10px; /* deixa a borda arredondada.*/
+    padding: 15px; /* aumenta a grossura da borda */
+    width: 600px; /* muda a largura da borda */
+    margin: auto; /* coloca a borda no meio */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.384); /* coloca sombra na borda */
+}
+p {
+    text-align: center;
+    padding: 8px;
+    font: normal 20px arial ;
+    color: rgb(0, 0, 0);
+}
+button {
+    background-color: rgb(90, 25, 49);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: padding;
+    margin-top: 20px;
+    animation: deslizar 3s ease-in-out infinite;
+    transition: transform 0.3s;
+    
+}
+.tremer { /* chama a classe tremer */
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+ .tremer:hover { /* treme ao encostar o mouse no botão */
+  animation: tremer 0.5s infinite;
+}
+
+
+footer {
+    color: aliceblue;
+    text-align: center;
+    font-style: normal;
+
+}
+@keyframes tremer { /* animação para tremer botão */
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  75%  { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+#estrelas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.estrela {
+    position: absolute;
+   color: yellow;
+   font-size: 30px; /* tamanho da estrela */
+   opacity: 0.8;
+   animation: cair linear infinite;
+   pointer-events: none;
+} /* cair → é o nome da animação (deve estar definida com @keyframes cair)
+
+linear → é a "velocidade constante" da animação (sem aceleração ou desaceleração)
+
+infinite → significa que a animação nunca para, ela repete para sempre 
+
+pointer-events: none;
+Essa é uma propriedade de controle de clique/interação.
+
+none significa que o elemento será ignorado pelo mouse.
+
+Você não consegue clicar, arrastar ou interagir com esse elemento.
+
+No caso das estrelas:
+Como elas estão apenas decorando a tela, você não quer que o usuário clique nelas por acidente */
+
+@keyframes cair { /* animação */
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
